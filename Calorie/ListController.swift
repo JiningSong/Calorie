@@ -8,13 +8,14 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-
+class ListController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    
 }
+
 

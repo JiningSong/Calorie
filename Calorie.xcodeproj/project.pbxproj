@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49CBF2E76A56C5FA282A4C08 /* Pods_Calorie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518802E18BFE399BB69AC278 /* Pods_Calorie.framework */; };
 		4A32CB172172D06C00354F0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32CB162172D06C00354F0E /* AppDelegate.swift */; };
-		4A32CB192172D06C00354F0E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32CB182172D06C00354F0E /* FirstViewController.swift */; };
-		4A32CB1B2172D06C00354F0E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32CB1A2172D06C00354F0E /* SecondViewController.swift */; };
+		4A32CB192172D06C00354F0E /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32CB182172D06C00354F0E /* MainPageController.swift */; };
 		4A32CB1E2172D06C00354F0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A32CB1C2172D06C00354F0E /* Main.storyboard */; };
 		4A32CB202172D06D00354F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A32CB1F2172D06D00354F0E /* Assets.xcassets */; };
 		4A32CB232172D06D00354F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A32CB212172D06D00354F0E /* LaunchScreen.storyboard */; };
+		4A32CB2B2172DC6500354F0E /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32CB2A2172DC6500354F0E /* ListController.swift */; };
+		4A9E69092173059700C1BBD1 /* AddPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E69082173059700C1BBD1 /* AddPhotoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26630FCDF1506CD5FB215B2C /* Pods-Calorie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calorie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calorie/Pods-Calorie.release.xcconfig"; sourceTree = "<group>"; };
 		4A32CB132172D06C00354F0E /* Calorie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calorie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A32CB162172D06C00354F0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A32CB182172D06C00354F0E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		4A32CB1A2172D06C00354F0E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4A32CB182172D06C00354F0E /* MainPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		4A32CB1D2172D06C00354F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A32CB1F2172D06D00354F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A32CB222172D06D00354F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A32CB242172D06D00354F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A32CB2A2172DC6500354F0E /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		4A9E69082173059700C1BBD1 /* AddPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoController.swift; sourceTree = "<group>"; };
+		518802E18BFE399BB69AC278 /* Pods_Calorie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calorie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70365D8700C6682AEEEC3D14 /* Pods-Calorie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calorie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calorie/Pods-Calorie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CBF2E76A56C5FA282A4C08 /* Pods_Calorie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18F447E2D09EB0A231057BDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70365D8700C6682AEEEC3D14 /* Pods-Calorie.debug.xcconfig */,
+				26630FCDF1506CD5FB215B2C /* Pods-Calorie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4A32CB0A2172D06C00354F0E = {
 			isa = PBXGroup;
 			children = (
 				4A32CB152172D06C00354F0E /* Calorie */,
 				4A32CB142172D06C00354F0E /* Products */,
+				18F447E2D09EB0A231057BDF /* Pods */,
+				DB010823E4F7BD2F03CBDFD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +75,23 @@
 			isa = PBXGroup;
 			children = (
 				4A32CB162172D06C00354F0E /* AppDelegate.swift */,
-				4A32CB182172D06C00354F0E /* FirstViewController.swift */,
-				4A32CB1A2172D06C00354F0E /* SecondViewController.swift */,
+				4A9E69082173059700C1BBD1 /* AddPhotoController.swift */,
+				4A32CB182172D06C00354F0E /* MainPageController.swift */,
+				4A32CB2A2172DC6500354F0E /* ListController.swift */,
 				4A32CB1C2172D06C00354F0E /* Main.storyboard */,
 				4A32CB1F2172D06D00354F0E /* Assets.xcassets */,
 				4A32CB212172D06D00354F0E /* LaunchScreen.storyboard */,
 				4A32CB242172D06D00354F0E /* Info.plist */,
 			);
 			path = Calorie;
+			sourceTree = "<group>";
+		};
+		DB010823E4F7BD2F03CBDFD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				518802E18BFE399BB69AC278 /* Pods_Calorie.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A32CB272172D06D00354F0E /* Build configuration list for PBXNativeTarget "Calorie" */;
 			buildPhases = (
+				CE4B03E4C91CEFFFE405AE86 /* [CP] Check Pods Manifest.lock */,
 				4A32CB0F2172D06C00354F0E /* Sources */,
 				4A32CB102172D06C00354F0E /* Frameworks */,
 				4A32CB112172D06C00354F0E /* Resources */,
+				B4DBE1A54EBD74F8F89630DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +162,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B4DBE1A54EBD74F8F89630DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Calorie/Pods-Calorie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCircularProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Calorie/Pods-Calorie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE4B03E4C91CEFFFE405AE86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Calorie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A32CB0F2172D06C00354F0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A32CB1B2172D06C00354F0E /* SecondViewController.swift in Sources */,
 				4A32CB172172D06C00354F0E /* AppDelegate.swift in Sources */,
-				4A32CB192172D06C00354F0E /* FirstViewController.swift in Sources */,
+				4A9E69092173059700C1BBD1 /* AddPhotoController.swift in Sources */,
+				4A32CB192172D06C00354F0E /* MainPageController.swift in Sources */,
+				4A32CB2B2172DC6500354F0E /* ListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +359,7 @@
 		};
 		4A32CB282172D06D00354F0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70365D8700C6682AEEEC3D14 /* Pods-Calorie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +378,7 @@
 		};
 		4A32CB292172D06D00354F0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26630FCDF1506CD5FB215B2C /* Pods-Calorie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
