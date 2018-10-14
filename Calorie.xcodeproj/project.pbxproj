@@ -15,6 +15,7 @@
 		4A32CB232172D06D00354F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A32CB212172D06D00354F0E /* LaunchScreen.storyboard */; };
 		4A32CB2B2172DC6500354F0E /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32CB2A2172DC6500354F0E /* ListController.swift */; };
 		4A9E69092173059700C1BBD1 /* AddPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E69082173059700C1BBD1 /* AddPhotoController.swift */; };
+		4A9E690F21734D1200C1BBD1 /* FoodCountsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E690E21734D1200C1BBD1 /* FoodCountsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4A32CB242172D06D00354F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A32CB2A2172DC6500354F0E /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		4A9E69082173059700C1BBD1 /* AddPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoController.swift; sourceTree = "<group>"; };
+		4A9E690E21734D1200C1BBD1 /* FoodCountsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCountsController.swift; sourceTree = "<group>"; };
 		518802E18BFE399BB69AC278 /* Pods_Calorie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calorie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70365D8700C6682AEEEC3D14 /* Pods-Calorie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calorie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calorie/Pods-Calorie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,16 +76,33 @@
 		4A32CB152172D06C00354F0E /* Calorie */ = {
 			isa = PBXGroup;
 			children = (
-				4A32CB162172D06C00354F0E /* AppDelegate.swift */,
-				4A9E69082173059700C1BBD1 /* AddPhotoController.swift */,
-				4A32CB182172D06C00354F0E /* MainPageController.swift */,
-				4A32CB2A2172DC6500354F0E /* ListController.swift */,
-				4A32CB1C2172D06C00354F0E /* Main.storyboard */,
+				4A9E691121734D3C00C1BBD1 /* View */,
+				4A9E691021734D2500C1BBD1 /* Controller */,
 				4A32CB1F2172D06D00354F0E /* Assets.xcassets */,
 				4A32CB212172D06D00354F0E /* LaunchScreen.storyboard */,
 				4A32CB242172D06D00354F0E /* Info.plist */,
 			);
 			path = Calorie;
+			sourceTree = "<group>";
+		};
+		4A9E691021734D2500C1BBD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A32CB162172D06C00354F0E /* AppDelegate.swift */,
+				4A9E69082173059700C1BBD1 /* AddPhotoController.swift */,
+				4A32CB182172D06C00354F0E /* MainPageController.swift */,
+				4A32CB2A2172DC6500354F0E /* ListController.swift */,
+				4A9E690E21734D1200C1BBD1 /* FoodCountsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A9E691121734D3C00C1BBD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A32CB1C2172D06C00354F0E /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DB010823E4F7BD2F03CBDFD6 /* Frameworks */ = {
@@ -170,17 +189,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Calorie/Pods-Calorie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProgressHUD/SwiftProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCircularProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -212,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9E690F21734D1200C1BBD1 /* FoodCountsController.swift in Sources */,
 				4A32CB172172D06C00354F0E /* AppDelegate.swift in Sources */,
 				4A9E69092173059700C1BBD1 /* AddPhotoController.swift in Sources */,
 				4A32CB192172D06C00354F0E /* MainPageController.swift in Sources */,

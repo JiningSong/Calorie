@@ -13,16 +13,17 @@ class MainPageController: UIViewController {
 
     @IBOutlet weak var dailyGoal: UILabel!
     @IBOutlet weak var progressBar: MBCircularProgressBarView!
+    var value:CGFloat = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.progressBar.value = 0
+        self.progressBar.value = value
         dailyGoal.text = "3100 Kcal"
         
     }
     override func viewDidAppear(_ animated: Bool) {
         
         UIView.animate(withDuration: 1.0) {
-            self.progressBar.value = 600
+            self.progressBar.value = self.value + 300
         }
         
     }
